@@ -1,9 +1,10 @@
 "use client";
+// src/app/page.tsx
 import Modal from "@/components/Modal";
 import Project from "@/components/Project";
 import { useState } from "react";
 
-export const projects = [
+const projects = [
   {
     title: "C2 Montreal",
     src: "c2montreal.png",
@@ -25,6 +26,7 @@ export const projects = [
     color: "#706d63",
   },
 ];
+
 export default function Home() {
   const [modal, setModal] = useState({ active: false, index: 0 });
   // console.log(modal.index);
