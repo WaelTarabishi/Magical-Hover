@@ -85,6 +85,7 @@ const Modal = ({ projects, modal }: ModalProps) => {
           style={{ top: index * -100 + "%" }}>
           {projects.map((project, index) => (
             <div
+              key={index}
               className={`relative h-full w-full flex items-center justify-center  `}
               style={{ backgroundColor: project.color }}>
               <Image
